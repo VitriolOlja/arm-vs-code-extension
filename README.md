@@ -2,8 +2,6 @@
 
 This VS Code extension adds hover-based expansion of `.equ` symbolic constants commonly used in ARM assembly files.
 
-Since this extension is not published on the Visual Studio Marketplace, you can install it manually by following these steps.
-
 ## Features
 
 - Highlights `.equ` symbolic constants and their usages.
@@ -17,12 +15,12 @@ Since this extension is not published on the Visual Studio Marketplace, you can 
 *Hover shows what each symbol expands to*
 
 
-## ⚙️ Requirements
+## Requirements
 
 - Visual Studio Code
 - Node.js and npm (for building from source)
 
-## 🛠 Manual Installation Guide
+## Manual Installation Guide
 
 Since this extension is not published on the Visual Studio Marketplace, you can install it manually:
 
@@ -47,7 +45,7 @@ npm run compile
 
 ### 4. Package the extension
 
-Make sure `vsce` is installed globally:
+Make sure `vsce` is installed, we do it globally here, but this might not be preferred. 
 
 ```bash
 npm install -g @vscode/vsce
