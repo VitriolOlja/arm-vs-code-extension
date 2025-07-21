@@ -2,6 +2,8 @@
 
 This VS Code extension adds hover-based expansion of `.equ` symbolic constants commonly used in ARM assembly files.
 
+Since this extension is not published on the Visual Studio Marketplace, you can install it manually by following these steps.
+
 ## Features
 
 - Highlights `.equ` symbolic constants and their usages.
@@ -13,6 +15,67 @@ This VS Code extension adds hover-based expansion of `.equ` symbolic constants c
 
 ![Symbolic Constant Expansion](img/symbolic_constant_expansion.png)  
 *Hover shows what each symbol expands to*
+
+
+## ⚙️ Requirements
+
+- Visual Studio Code
+- Node.js and npm (for building from source)
+
+## 🛠 Manual Installation Guide
+
+Since this extension is not published on the Visual Studio Marketplace, you can install it manually:
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/VitriolOlja/arm-vs-code-extension.git
+cd arm-vs-code-extension
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Compile the extension
+
+```bash
+npm run compile
+```
+
+### 4. Package the extension
+
+Make sure `vsce` is installed globally:
+
+```bash
+npm install -g @vscode/vsce
+```
+
+Then package the extension:
+
+```bash
+vsce package
+```
+
+This will generate a `.vsix` file, e.g.:
+
+```
+arm-vs-code-extension-1.0.0.vsix
+```
+
+### 5. Install the extension in VS Code
+
+```bash
+code --install-extension arm-vs-code-extension-1.0.0.vsix
+```
+
+If updating an existing install, use the `--force` flag:
+
+```bash
+code --install-extension arm-vs-code-extension-1.0.0.vsix --force
+```
 
 ## Requirements
 
