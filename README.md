@@ -1,36 +1,47 @@
-# arm-vs-code-extension README
+# arm-vs-code-extension
 
-This adds expansion of '.equ' symbolic constants in arm files. 
+This VS Code extension adds hover-based expansion of `.equ` symbolic constants commonly used in ARM assembly files.
 
 ## Features
 
-expansion of '.equ' symbolic constans. 
+- Highlights `.equ` symbolic constants and their usages.
+- Hovering over a symbol shows its defined value.
+- Lightweight, with no extra configuration needed.
+
+![Symbolic Constant Definition](img/symbolic_constant.png)  
+*Definition of symbolic constants using `.equ`*
+
+![Symbolic Constant Expansion](img/symbolic_constant_expansion.png)  
+*Hover shows what each symbol expands to*
 
 ## Requirements
 
-no requirements. 
+No dependencies. It works out of the box.
 
 ## Extension Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+This extension does not currently contribute any user-configurable settings.
 
 ## Known Issues
 
-No known issues. Please let me know if you find any. 
+No known issues at the moment.  
+Feel free to open an issue or pull request if you encounter a problem or want to suggest an improvement.
 
 ## Release Notes
 
-Release
-
 ### 1.0.0
 
-Initial release. Consider it a beta version. Since this is my first extension. 
+- Initial release
+- Parses `.equ` statements and maps symbols to values
+- Adds hover decorations for all usages of defined symbols
+- Currently only supports simple constant values (no expressions or nested macros)
 
 ---
+
+## Contributing
+
+Contributions are welcome! Feel free to fork the repo and submit a pull request.
+
+## License
+
+MIT
